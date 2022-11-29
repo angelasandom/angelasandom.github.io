@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+  background-color: #4f0c1e;
+  color: white;
+}
+
+#header-img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+#header {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-color: #fce0ac;
+    grid-template-columns: 1fr 1fr 3fr 2fr;
+    height: fit-content;
+    width: 100%;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo-title {
+  color: rgb(43, 39, 39);
+  font-size: 3.5em;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 10px;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px #924b75;
+  text-align: center;
+}
+
+.logo-sub {
+  color: rgb(62, 59, 59);
+  font-family: monospace;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.sub-sub {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1.2em;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+#menu-bar {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+a {
+  color: rgb(43, 39, 39);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a:hover {
+  color: white;
+  background-color: #4f0c1e;
+  cursor: pointer;
+  padding: 5px;
+}
+
+a:last-of-type {
+  margin-left: 5px;
+}
+
+#our_philosophy {
+  padding-top: 190px;
+  padding-bottom: 20px;
+}
+
+#philosophy {
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+#one_day_with_us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  column-gap: 40px;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.tours {
+  border: 4px solid rgb(46, 43, 43);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.description {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9em;
+}
+
+.prices {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  text-align:  center;
+  margin-top: 2em;
+}
+
+#email_form {
+  color:#b089a0;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+  .logo-sub {
+    display: none;
+  }
+
+  #menu-bar {
+    display: block;
+  }
+
+  #menu-bar > li {
+    line-height: 2em;
+    margin-right: -70px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  #our_philosophy {
+    padding-top: 130px;
+    padding-bottom: 0px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .tours {
+    border: 1px solid rgb(46, 43, 43);
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  .prices {
+    color: #fce0ac;
+  }
+
+
+}
+   
+  
